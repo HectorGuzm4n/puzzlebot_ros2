@@ -103,7 +103,7 @@ robot con sus ruedas, LiDAR y todos los frames TF correctos en RViz. Cruza los d
 
 ### Navegación autónoma con el mapa ya existente
 
-El proyecto ya incluye un mapa generado. Solo necesitas una terminal:
+Ya tiene un mapa cargado pero si hay uno mejor lo reemplazamos. Solo necesitamos una terminal:
 
 ```bash
 source ~/ros2_ws/install/setup.bash
@@ -117,7 +117,7 @@ Esto lanza Gazebo + Nav2 completo + RViz. Una vez abierto, en RViz:
 3. Haz clic en **"Nav2 Goal"** (o **"2D Goal Pose"**) y marca el destino deseado
 4. El robot calcula la ruta y navega solo evitando obstáculos
 
-Si quieres usar un mapa personalizado distinto al que viene por defecto:
+Situacion de cambio de mapa diferente al original:
 
 ```bash
 ros2 launch puzzlebot_navigation2 nav2.launch.py map:=/ruta/a/tu/mapa.yaml
